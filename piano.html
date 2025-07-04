@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Piano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <div id="piano">
+      <svg width="120" height="120" viewBox="0 0 120 120" aria-label="Circle">
+        <circle cx="60" cy="60" r="55" fill="#aee7ff" />
+        <foreignObject x="35" y="40" width="30" height="30">
+          <button id="play-song" style="
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            border:none;
+            background:#000000;
+            box-shadow: 0 0 12px 4px rgba(0,0,0,0.28);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+            font-weight:bold;
+            font-size:1.2em;
+            padding:0;
+          " aria-label="Play Song">▶</button>
+        </foreignObject>
+      </svg>
+      <div class="circle-btn-container">
+        <button class="circle-btn" aria-label="Menu"></button>
+      </div>
+      <div class="keys">
+        <div class="key-group">
+          <div class="key" data-key="a" data-note="a" aria-label="A">A</div>
+          <div class="key black--key" data-key="w" data-note="asharp" aria-label="A sharp">A#</div>
+        </div>
+        <div class="key-group">
+          <div class="key" data-key="s" data-note="b" aria-label="B">B</div>
+        </div>
+        <div class="key-group">
+          <div class="key" data-key="d" data-note="c" aria-label="C">C</div>
+          <div class="key black--key" data-key="r" data-note="csharp" aria-label="C sharp">C#</div>
+        </div>
+        <div class="key-group">
+          <div class="key" data-key="f" data-note="d" aria-label="D">D</div>
+          <div class="key black--key" data-key="t" data-note="dsharp" aria-label="D sharp">D#</div>
+        </div>
+        <div class="key-group">
+          <div class="key" data-key="g" data-note="e" aria-label="E">E</div>
+        </div>
+        <div class="key-group">
+          <div class="key" data-key="h" data-note="f" aria-label="F">F</div>
+          <div class="key black--key" data-key="y" data-note="fsharp" aria-label="F sharp">F#</div>
+        </div>
+        <div class="key-group">
+          <div class="key" data-key="j" data-note="g" aria-label="G">G</div>
+          <div class="key black--key" data-key="u" data-note="gsharp" aria-label="G sharp">G#</div>
+        </div>
+      </div>
+    </div>
+    <script src="site.js"></script>
+  </body>
+</html>
